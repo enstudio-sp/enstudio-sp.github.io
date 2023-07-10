@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+  
+  --black: #000;
+  --white: #fff;
+  --orange: #fd7e14;
+  --gray-dark: #343a40;
+  --dark: #252525;
+  --podloga: #eeddbff6;
+  --padding: 50px 0;
+  --transition: 0,5s;
+}
+  
+body {
+  font-family: "Roboto", sans-serif;
+  }
+  
+h1 {
+  font-size: 50px;
+  color: var(--dark);
+  font-family: 600;
+}
+  
+h2 {
+  font-size: 30px;
+  color: var(--orange);
+}
+
+/* .button {
+  padding: 20px 60px;
+  background-color: var(--dark);
+  color: var(--white);
+  border: none;
+  margin-top: 20px;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0, 5s;
+} */
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--black);
+  font-size: 20px;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+
+  /**********************
+Header
+*******************/
+header{
+  background-color: var(--podloga);
+  height: 35vh;
+  
+}
+
+header .container {
+  display: flex;
+  
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+header .container .logo img{
+  height: 12rem ;
+}
+
+header .container h1 {
+  color: var(--black);
+  /* font-style: italic; */
+}
+
+header .container h1 span{
+  color: var(--gray-dark);
+  font-size: 30px;
+ 
+}
+
+header .container nav a{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+  color: var(--black);
+  
+}
+
+
+header .container nav :hover{
+  color: var(--white);
+}
+
+/*.kvadrat{
+  height: 10vh;
+  width: 20%;
+  background-color: blue;
+  position: fixed;
+  right: 0;
+  left: 1;
+  top: 15vh;
+}*/
+.button button{
+  /*padding: 20px 40px;*/
+  height: 10vh;
+  width: 30vh;
+  background-color: var(--dark);
+  color: var(--white);
+  border: none;
+  /*margin-top: 20px;
+  margin-left: 20%;*/
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0,5s;
+  position: fixed;
+  right: 0;
+  left: 1;
+  top: 25vh;
+}
+
+
+/**********************
+Hero
+*******************/
+
+.hero{
+  background-image:url(img/img8.jpg);
+  background-size: cover;
+  
+  background-position: center;
+  color:var(--orange);
+}
+
+.hero .container{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: var(--white);
+  padding-right: 45%;
+
+}
+
+.hero .container h2{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+
+}
+
+.hero .container p{
+  margin-left: 20px;
+  
+
+}
+
+.hero .container hr{
+  margin: 20px;
+}
+
+
+/**********************
+Usluge
+*******************/
+
+.usluge{
+  padding: 15px;
+ 
+  background-color:var(--podloga) ;
+ 
+}
+.usluge h2{
+  
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+.usluge hr{
+  margin: 20px;
+}
+
+.usluge p{
+  color:var(--orange) ;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.usluge .container ul li a{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--orange);
+ }
+
+/**********************
+About
+*******************/
+
+.about{
+  padding: 15px;
+  background-color:var(--podloga) ;
+}
+.about h2{
+  
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.about hr{
+  margin: 20px;
+}
+
+.about .gallery-images{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+
+.about .imena{
+  display: flex;
+  justify-content: space-around;
+  font-style:normal;
+  
+}
+.about .imena p{
+  color: var(--orange);
+  font-size: 25px;
+}
+
+
+
+.about p{
+  padding: 15px;
+  color: var(--black);
+}
+
+/**********************
+Gallery section
+*******************/
+
+.gallery{
+  
+  padding-top: 5px;
+  padding-bottom: 25px;
+  background-color:var(--podloga) ;
+}
+
+.gallery h2{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.gallery hr{
+  margin: 20px;
+}
+
+.gallery .gallery-images {
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-between;
+}
+
+
+/*.gallery .gallery-images figure{
+  /*margin-bottom: 50px;
+  flex: 0 0 32;*/
+
+
+/**********************
+Pacijenti
+*******************/
+
+
+section.pacijenti{
+  position: relative;
+  /* height: 70vh; */
+  /* background-color: var(--podloga); */
+  
+}
+
+h2{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+.pacijenti hr {
+  margin: 20px;
+}
+
+.pacijenti{
+  
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* background-color: var(--podloga); */
+  
+    
+  }
+.pacijenti .fotografije{
+  display: flex;
+  /*position:relative;
+  top: 5px;
+  left: 28%*/
+  flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: space-between;
+  
+} 
+
+/*.pacijenti .fotografija2{
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  top: 5px;
+  left: 1px;
+  /*flex-wrap: wrap;
+  margin-right: 30%;
+  justify-content: space-between;*/
+  
+
+
+.pacijenti .imena p1{
+  font-size: 25px;
+  font-style: normal;
+  color: var(--orange);
+  position:relative;
+  top: 5px;
+  left: 25%
+  
+}
+
+.pacijenti .imena p2{
+  font-size: 25px;
+  font-style: normal;
+  color: var(--orange);
+  position:relative;
+  top: 5px;
+  left: 50%
+  
+}
+
+
+.pacijenti .fotografije :hover{
+  
+cursor: pointer;
+  
+}
+
+/**********************
+Footer
+*******************/
+
+footer{
+  padding: 15px;
+  background-color: var(--black);
+  color: var(--white);
+  }
+
+ footer .container{
+  display: flex;
+  justify-content: space-between;
+ } 
+  
+footer hr {
+  margin: 20px;
+}
+
+footer .container h3{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 25px;
+  color: var(--orange);
+}
+
+
+footer .container a{
+  
+  color: var(--white);
+  justify-content: space-between;
+}
+
+
+
+footer .bottomBar {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
